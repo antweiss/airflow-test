@@ -95,7 +95,7 @@ my_other_task = KubernetesPodOperator(
         "sleep",
         "50"
     ],
-    name="succ_email-test",
+    name="succ-email-test",
     image_pull_secrets="regcred",
     image_pull_policy="Always",
     task_id=f"mytask_good",
