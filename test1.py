@@ -76,7 +76,7 @@ my_task = KubernetesPodOperator(
     namespace='default',
     image='alpine',
     cmds=[
-        "sleep 30 && exit 0",
+        "sleep", "30"
     ],
     name="email-test",
     image_pull_secrets="regcred",
@@ -91,7 +91,7 @@ my_other_task = KubernetesPodOperator(
     namespace='default',
     image='alpine',
     cmds=[
-        "sleep 100 && exit 0",
+        "sleep", "100"
     ],
     name="succ_email-test",
     image_pull_secrets="regcred",
