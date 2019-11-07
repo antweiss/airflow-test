@@ -21,7 +21,7 @@ default_args = {
     # 'end_date': datetime(2016, 1, 1),
 }
 
-dag = DAG('basher', default_args=default_args)
+dag = DAG('basher4', default_args=default_args)
 
 # t1, t2 and t3 are examples of tasks created by instatiating operators
 t1 = BashOperator(
