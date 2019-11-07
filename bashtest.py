@@ -21,12 +21,12 @@ default_args = {
     # 'end_date': datetime(2016, 1, 1),
 }
 
-dag = DAG('tutorial', default_args=default_args)
+dag = DAG('basher', default_args=default_args)
 
 # t1, t2 and t3 are examples of tasks created by instatiating operators
 t1 = BashOperator(
-    task_id='print_date',
-    bash_command='timeout 120s dd if=/dev/zero of=/dev/null',
+    task_id='long task',
+    bash_command='timeout 120s curl 8.8.8.8',
     dag=dag)
 
 t1.doc_md = """\
