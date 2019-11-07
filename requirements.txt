@@ -5,3 +5,4 @@ ring==0.7.2
 pandas==0.25.0
 cryptography==2.7.0
 requests==2.22.0
+airflow-metrics==0.1.5
