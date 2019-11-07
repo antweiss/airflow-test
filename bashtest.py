@@ -25,7 +25,7 @@ dag = DAG('basher', default_args=default_args)
 
 # t1, t2 and t3 are examples of tasks created by instatiating operators
 t1 = BashOperator(
-    task_id='long task',
+    task_id='long_task',
     bash_command='timeout 120s curl 8.8.8.8',
     dag=dag)
 
