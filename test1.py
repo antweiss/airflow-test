@@ -76,7 +76,7 @@ my_task = KubernetesPodOperator(
     namespace='default',
     image='alpine',
     cmds=[
-        "sleep", "30"
+        "timeout", "120s", "dd if=/dev/zero of=/dev/null"
     ],
     name="email-test",
     image_pull_secrets="regcred",
